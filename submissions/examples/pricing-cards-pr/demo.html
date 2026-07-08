@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Premium Pricing Cards</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { background-color: #0f172a; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; font-family: system-ui, sans-serif; color: #fff; }
+    .container { padding: 2rem; max-width: 1200px; width: 100%; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="pricing-grid">
+      <!-- Basic Tier -->
+      <div class="pricing-card">
+        <h3 class="pricing-tier">Starter</h3>
+        <div class="pricing-price">$9<span class="pricing-period">/mo</span></div>
+        <ul class="pricing-features">
+          <li>1 Project</li>
+          <li>Basic Analytics</li>
+          <li>24/7 Support</li>
+        </ul>
+        <button class="pricing-btn">Get Started</button>
+      </div>
+      <!-- Pro Tier -->
+      <div class="pricing-card pricing-card-popular">
+        <div class="pricing-badge">Most Popular</div>
+        <h3 class="pricing-tier">Professional</h3>
+        <div class="pricing-price">$29<span class="pricing-period">/mo</span></div>
+        <ul class="pricing-features">
+          <li>Unlimited Projects</li>
+          <li>Advanced Analytics</li>
+          <li>Priority Support</li>
+          <li>Custom Domain</li>
+        </ul>
+        <button class="pricing-btn pricing-btn-primary">Upgrade to Pro</button>
+      </div>
+      <!-- Enterprise Tier -->
+      <div class="pricing-card">
+        <h3 class="pricing-tier">Enterprise</h3>
+        <div class="pricing-price">$99<span class="pricing-period">/mo</span></div>
+        <ul class="pricing-features">
+          <li>Everything in Pro</li>
+          <li>Dedicated Account Manager</li>
+          <li>SSO & Advanced Security</li>
+        </ul>
+        <button class="pricing-btn">Contact Sales</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
