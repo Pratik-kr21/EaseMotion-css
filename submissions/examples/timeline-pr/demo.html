@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Glowing Timeline Component</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { background-color: #0b1121; display: flex; justify-content: center; padding: 4rem 2rem; min-height: 100vh; margin: 0; font-family: system-ui, sans-serif; color: #e2e8f0; }
+    .container { max-width: 800px; width: 100%; }
+    h2 { text-align: center; margin-bottom: 4rem; color: #fff; font-weight: 800; font-size: 2.5rem; letter-spacing: -0.025em; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Project Roadmap</h2>
+    <div class="timeline">
+      <!-- Item 1 -->
+      <div class="timeline-item">
+        <div class="timeline-dot timeline-dot-active"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">Q1 2026</div>
+          <h3 class="timeline-title">Foundation & Core</h3>
+          <p class="timeline-description">Established the base design system, typography tokens, and primary color palette for the entire framework.</p>
+        </div>
+      </div>
+      <!-- Item 2 -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">Q2 2026</div>
+          <h3 class="timeline-title">Component Expansion</h3>
+          <p class="timeline-description">Rolled out 30+ new UI components including modals, tooltips, and interactive glassmorphism cards.</p>
+        </div>
+      </div>
+      <!-- Item 3 -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">Q3 2026</div>
+          <h3 class="timeline-title">React & SCSS Integration</h3>
+          <p class="timeline-description">Published official wrappers for React developers and exposed modular SCSS mixins for advanced theming.</p>
+        </div>
+      </div>
+      <!-- Item 4 -->
+      <div class="timeline-item">
+        <div class="timeline-dot timeline-dot-future"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">Q4 2026 (Upcoming)</div>
+          <h3 class="timeline-title">Version 2.0 Launch</h3>
+          <p class="timeline-description">Complete rewrite of the underlying grid system utilizing modern CSS Container Queries and cascade layers.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

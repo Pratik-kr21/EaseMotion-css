@@ -1,0 +1,104 @@
+.timeline {
+  position: relative;
+  padding-left: 3rem; /* 48px */
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 11px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #6c63ff, #8b5cf6 50%, rgba(139, 92, 246, 0.1));
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -44px; /* Centers the 16px dot on the 2px line at 11px */
+  top: 1.5rem; /* Aligns with the padding of the content block */
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #141e33;
+  border: 2px solid #6c63ff;
+  box-shadow: 0 0 10px rgba(108, 99, 255, 0.4);
+  z-index: 2;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.timeline-item:hover .timeline-dot {
+  transform: scale(1.4);
+  box-shadow: 0 0 20px rgba(108, 99, 255, 0.8);
+  background: #6c63ff;
+}
+
+.timeline-dot-active {
+  background: #6c63ff;
+  animation: timeline-pulse 2s infinite;
+}
+
+@keyframes timeline-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(108, 99, 255, 0.6); }
+  70% { box-shadow: 0 0 0 12px rgba(108, 99, 255, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(108, 99, 255, 0); }
+}
+
+.timeline-dot-future {
+  border-color: #475569;
+  box-shadow: none;
+}
+
+.timeline-item:hover .timeline-dot-future {
+  border-color: #94a3b8;
+  background: #475569;
+  box-shadow: 0 0 15px rgba(148, 163, 184, 0.4);
+}
+
+.timeline-content {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
+  transition: transform 0.3s ease, background 0.3s ease, border-color 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.timeline-item:hover .timeline-content {
+  transform: translateX(8px);
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(108, 99, 255, 0.3);
+}
+
+.timeline-date {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #a09af8;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 0.75rem 0;
+}
+
+.timeline-description {
+  font-size: 1rem;
+  color: #94a3b8;
+  line-height: 1.6;
+  margin: 0;
+}
