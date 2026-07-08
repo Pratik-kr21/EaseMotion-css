@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Premium Stepper Component</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { background-color: #f8fafc; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; font-family: system-ui, sans-serif; }
+    .container { max-width: 800px; width: 100%; padding: 3rem; background: #fff; border-radius: 1.5rem; box-shadow: 0 10px 40px rgba(0,0,0,0.05); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="stepper">
+      <!-- Step 1 (Completed) -->
+      <div class="step step-completed">
+        <div class="step-icon">✓</div>
+        <div class="step-content">
+          <div class="step-title">Account Details</div>
+          <div class="step-description">Setup your profile</div>
+        </div>
+        <div class="step-line"></div>
+      </div>
+      <!-- Step 2 (Active) -->
+      <div class="step step-active">
+        <div class="step-icon">2</div>
+        <div class="step-content">
+          <div class="step-title">Payment Method</div>
+          <div class="step-description">Add billing details</div>
+        </div>
+        <div class="step-line"></div>
+      </div>
+      <!-- Step 3 (Pending) -->
+      <div class="step">
+        <div class="step-icon">3</div>
+        <div class="step-content">
+          <div class="step-title">Review Order</div>
+          <div class="step-description">Confirm purchase</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
